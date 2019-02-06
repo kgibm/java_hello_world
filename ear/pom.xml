@@ -3,14 +3,14 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example.java_hello_world</groupId>
+    <groupId>com.example.java_web_hello_world</groupId>
     <artifactId>ear</artifactId>
     <packaging>ear</packaging>
     <version>1.0-SNAPSHOT</version>
     
     <dependencies>
         <dependency>
-            <groupId>com.example.java_hello_world</groupId>
+            <groupId>com.example.java_web_hello_world</groupId>
             <artifactId>war</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>war</type>
@@ -18,7 +18,7 @@
     </dependencies>
 
     <build>
-        <finalName>java_hello_world</finalName>
+        <finalName>java_web_hello_world</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -30,10 +30,10 @@
                     <generateApplicationXml>true</generateApplicationXml>
                     <modules>
                         <webModule>
-                            <groupId>com.example.java_hello_world</groupId>
+                            <groupId>com.example.java_web_hello_world</groupId>
                             <artifactId>war</artifactId>
                             <contextRoot>/</contextRoot>
-                            <bundleFileName>java_hello_world.war</bundleFileName>
+                            <bundleFileName>java_web_hello_world.war</bundleFileName>
                         </webModule>
                     </modules>
                 </configuration>
